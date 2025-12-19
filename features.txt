@@ -1,0 +1,16 @@
+Employee's features
+	request leave
+	check in checkout
+	notifications and access to announcements
+	check his profile
+	check tasks
+	schedule
+
+
+Admin's features
+	add employees
+	delete/inactive employees
+	make announcements
+	approve or reject leaves
+	assign tasks to employees
+	edit and view employees
