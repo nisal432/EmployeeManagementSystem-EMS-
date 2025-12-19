@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/default.css">
-	<link rel="stylesheet" href="../css/options.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/homePage.css" />
+    <link rel="stylesheet" href="../css/options.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-name">
+        <img src="../assests/images/office.png" alt="" class="logo" />
+        <div class="name">EMSystem</div>
+      </div>
+      <ul class="options">
+        <li class="option"><a href="#features">Features</a></li>
+        <li class="option">About</li>
+        <li class="option"><a href="#contributors">Contributors</a></li>
+      </ul>
+      <div class="redirect-section">
+        <div class="notification-container">
+          <img
+            src="../assests/images/notification.png"
+            alt=""
+            class="notification"
+          />
+        </div>
+        <img src="../assests/images/user (1).png" alt="" class="profile" />
+      </div>
+    </nav>
+    <section id="profile-details">
+      <h1>My profile</h1>
+      <div class="quick-menu box">
+        <a>
+          <div class="img-container">
+              
+          </div>
+          <div class="details-block">
+            <h2 class="profile-name">Sara Doughlas Junior</h2>
+            <div class="profile-position">Junior Fronted Engineeer</div>
 
-</head>
-<body>
-	
-</body>
+            <div class="profile-last">
+              <div class="profile-id">
+                <div class="profile-heading" id="id-heading">Employee Id:</div>
+                <div id="employee-id">1</div>
+              </div>
+              <div class="profile-department">
+                <div class="profile-heading" id="department-heading">Department:</div>
+                <div id="employee-department">Production</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+	  <div class="full-details page-details">
+		<h2>Details</h2>
+		<div class="details-grid">
+			<div class="detail">
+				<div class="detail-title">Full Name</div>
+				<div class="detail-value">Sarah Doughlin Juniour</div>
+			</div>
+			<div class="detail">
+				<div class="detail-title">Email Address</div>
+				<div class="detail-value">sarah@gmail12.com</div>
+			</div>
+			<div class="detail">
+				<div class="detail-title">Phone</div>
+				<div class="detail-value">Not-Set</div>
+			</div>
+			<div class="detail">
+				<div class="detail-title">Address</div>
+				<div class="detail-value">Bhaktapur-4 Dichu Vinayak</div>
+			</div>
+			<div class="detail">
+				<div class="detail-title">Salary/Monthly</div>
+				<div class="detail-value">9000$</div>
+			</div>
+			<div class="detail">
+				<div class="detail-title">Date Of Birth</div>
+				<div class="detail-value">2072-21-21</div>
+			</div>
+		</div>
+		<button id="edit-profile-btn">Edit</button>
+
+	  </div>
+    </section>
+  </body>
 </html>

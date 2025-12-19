@@ -1,0 +1,115 @@
+#profile-details {
+  padding: 30px 5%;
+  /* display: flex; */
+  /* flex-direction: column;
+	align-items: center; */
+  /* justify-content: center; */
+}
+.quick-menu {
+  /* width: minmax(200px,300px); */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.img-container {
+  width: 110px;
+  /* border: 1px solid black; */
+  height: 110px;
+  border-radius: 50%;
+  /* background-color: red; */
+  background: url("../assests/images/female.jpg");
+  /* box-shadow: 1px 1px 10px rgb(0, 0, 0); */
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.quick-menu a {
+  flex-direction: row;
+  gap: 40px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.details-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-last {
+  display: flex;
+  gap: 15px;
+}
+.profile-id,
+.profile-department {
+  display: flex;
+  gap: 5px;
+}
+.details-block {
+  color: rgb(97, 95, 95);
+  font-weight: 500;
+}
+.profile-heading {
+  color: black;
+}
+.page-details {
+  background-color: rgb(254, 247, 247);
+  box-shadow: 1px 1px 5px rgb(195, 193, 193);
+  transition: 0.2s ease all;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.page-details:hover{
+	transform: translateY(-4px);
+	/* border: 1px solid blue; */
+	box-shadow: 1px 1px 5px rgb(130, 130, 229);
+}
+.details-grid{
+	display: grid;
+	width: 100%;
+	font-weight: 500;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.detail-value{
+	  color: rgb(97, 95, 95);
+border: 2px solid rgb(231, 225, 225);
+/* box-shadow: 1px 1px 5px rgb(172, 166, 166); */
+height: 50px;
+/* justify-content: center; */
+align-items: center;
+display: flex;
+padding-left: 20px;
+border-radius: 8px;
+	  
+}
+.detail{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+#edit-profile-btn{
+	width: 100px;
+	height: 30px;
+	background-color: rgb(61, 46, 176);
+	border: none;
+	border-radius: 5px;
+	margin-left: auto;
+	display: block;
+	color: white;
+	font-weight: 500;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#edit-profile-btn:hover{
+		background-color: rgb(42, 30, 132);
+
+}

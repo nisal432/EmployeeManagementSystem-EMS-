@@ -5,4 +5,114 @@
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
+nav {
+  box-shadow: 1px 0 2px rgb(239, 231, 231);
+  background-color: oklch(99.107% 0.00011 271.152 / 0.529);
+  backdrop-filter: blur(32px);
+  display: flex;
+  padding: 5px 25px;
+  height: 60px;
+  /* border: 1px solid black; */
+  align-items: center;
+  /* gap: 20%; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.logo-name {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 8px;
+  margin-right: auto;
+}
+.logo {
+  width: 40px;
+}
+.name {
+  font-weight: 700;
+  font-size: 18px;
+}
+.options {
+  display: flex;
+  /* text-decoration: none; */
+  list-style-type: none;
+  gap: 27px;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.option {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(107, 106, 106);
+  cursor: pointer;
+  transition: 0.2s ease all;
+  /* border: 1px solid black; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redirect-section {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
 
+.option:hover {
+  color: rgb(39, 36, 36);
+}
+@media (max-width: 768px) {
+  .options {
+    display: none;
+  }
+  .logo {
+    width: 25px;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .redirect-section {
+    gap: 5px;
+  }
+}
+.option a {
+  text-decoration: none;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(107, 106, 106);
+}
+.option a:hover {
+  color: rgb(39, 36, 36);
+  transition: 0.2s ease all;
+}
+.profile{
+  width: 30px;
+  cursor: pointer;
+}
+.notification{
+  cursor: pointer;
+  opacity: 0.8;
+  width: 25px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  
+}
+.notification-container{
+  transition: 0.2s ease all;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.notification-container:hover{
+  background-color: rgb(234, 229, 229);
+
+}
