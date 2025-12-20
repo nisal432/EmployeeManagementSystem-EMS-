@@ -113,3 +113,28 @@ border-radius: 8px;
 		background-color: rgb(42, 30, 132);
 
 }
+@media (max-width:545px) {
+  .profile-last{
+    flex-direction: column;
+    gap: 4px;
+  }
+  .img-container{
+    width: 90px;
+    height: 90px;
+  }
+  .details-block{
+    gap: 5px;
+    font-size: 14px;
+  }
+  .details-block h2{
+    font-size: 16px;
+  }
+  .quick-menu a{
+    gap: 15px;
+  }
+.details-grid{
+  grid-template-columns: 1fr;
+}
+
+  
+}
