@@ -131,7 +131,16 @@ align-items: center;
 display: flex;
 padding-left: 20px;
 border-radius: 8px;
-	  
+font-weight: 500;
+/* background-color: white; */
+}
+.details-grid{
+	display: grid;
+	width: 100%;
+	font-weight: 500;
+  /* font-size: 15px; */
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
 }
 .detail{
 	padding: 10px;
@@ -140,6 +149,10 @@ border-radius: 8px;
 	gap: 5px;
 }
 .page-details {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   background-color: rgb(254, 247, 247);
   box-shadow: 1px 1px 5px rgb(195, 193, 193);
   transition: 0.2s ease all;
@@ -148,6 +161,7 @@ border-radius: 8px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
 
 }
 .page-details:hover{
@@ -209,7 +223,7 @@ border-bottom: 1.7px solid rgb(234, 229, 229);
   padding-left: 5px;
 }
 
-.attendance-table{
+.table{
   margin-top: 2rem;
   overflow-x: auto;
 }
@@ -230,3 +244,51 @@ border-bottom: 1.7px solid rgb(234, 229, 229);
 .option:hover::before{
   width: 100%;
 }
+.page{
+  padding: 30px 5%;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status img{
+  width: 20px;
+}
+.status{
+  font-size: 14px;
+  color:  white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  background-color: rgb(17, 172, 17);
+  border-radius: 5px;
+  position: fixed;
+  /* top: 100; */
+  top: 2%;
+  height: 35px;
+  justify-content: center;
+  gap: 10px;
+  left: 50%;
+  z-index: 1;
+  transition: 0.2s ease-in-out all;
+  opacity: 0;
+}
+.status-active{
+  transform: translate(-50%);
+  opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+

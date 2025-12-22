@@ -25,7 +25,7 @@ border-radius: 5px;
 .box-description{
 	color: rgb(97, 95, 95);
 	font-size: 14px;
-	height: 28px;
+	/* height: 28px; */
 	display: flex;
 	align-items: center;
 }

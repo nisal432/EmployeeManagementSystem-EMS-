@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/homePage.css" />
+    <link rel="stylesheet" href="../css/applyLeave.css" />
+  </head>
+  <body>
+    <div id="status" class="status hidden">
+      <img src="../assests/images/check.png" alt="" />
+      Success
+    </div>
+    <section id="apply-leave-page" class="page">
+      <h1>Apply Leave</h1>
+      <div class="quick-menu box">
+        <a>
+          <div class="img-container">
+            <img src="../assests/images/completed-task.png" alt="user-icon" />
+          </div>
+          <div class="block">
+            <h2>Apply For Today</h2>
+            <div class="box-description">
+              Want a leave for today? Submit your leave it with one click
+            </div>
+
+            <button id="apply-today-btn" class="box-btn">Apply Now</button>
+          </div>
+        </a>
+      </div>
+
+      <div class="page-details">
+        <h2>New Leave Request</h2>
+        <form action="" class="details-grid">
+          <div class="detail">
+            <div class="detail-title">Start Date</div>
+            <input required type="date" class="detail-value" />
+          </div>
+          <div class="detail">
+            <div class="detail-title">End Date</div>
+            <input required type="date" class="detail-value" />
+          </div>
+          <div class="detail">
+            <div class="detail-title">Leave Type</div>
+            <select class="detail-value" name="leave_type" required>
+              <option value="">Select Leave Type</option>
+              <option>Sick Leave</option>
+              <option>Casual Leave</option>
+              <option>Paid Leave</option>
+              <option>Emergency Leave</option>
+            </select>
+          </div>
+          <div class="detail">
+            <div class="detail-title">Total Leave Days</div>
+            <div class="detail-value">9</div>
+          </div>
+          <div id="reason" class="detail">
+            <div class="detail-title">Reasson</div>
+            <input required type="text" class="detail-value" />
+          </div>
+          <div id="btn-container"><button type="submit" class="box-btn">Submit</button></div>
+        </form>
+      </div>
+	  <div class="table">
+		<h2>Leave History And Status</h2>
+		<div class="table-headings">
+			<div class="table-heading">S.N</div>
+			<div class="table-heading">Submitted At</div>
+			<div class="table-heading">Leave Date</div>
+			<div class="table-heading">Leave Type</div>
+			<div class="table-heading">Status</div>
+		</div>
+		<div class="table-datas">
+			<div class="table-data">1</div>
+			<div class="table-data">2072-01-01</div>
+			<div class="table-data">2072-01-11 To 2072-01-14</div>
+			<div class="table-data">Sick Leave</div>
+			<div class="table-data">pending</div>
+		</div>
+	  </div>
+    </section>
+  </body>
+  <script>
+    const status = document.getElementById("status");
+
+    const applyBtn = document.getElementById("apply-today-btn");
+
+    // console.log(applyBtn);
+    applyBtn.addEventListener("click", (e) => {
+      if (status.classList.contains("hidden")) {
+        status.classList.remove("hidden");
+        setTimeout(() => {
+          status.classList.add("status-active");
+        });
+        setTimeout(() => {
+          status.classList.remove("status-active");
+          status.classList.add("hidden");
+        }, 1500);
+      }
+    });
+  </script>
+</html>
