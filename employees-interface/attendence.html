@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/homePage.css" />
+    <link rel="stylesheet" href="../css/attendence.css" />
+  </head>
+  <body>
+    <section id="attendence-page" style="padding: 30px 5%">
+      <h1>Mark Attendence & History</h1>
+      <div class="box-container">
+        <div class="box">
+          <a>
+            <div class="img-container">
+              <img src="../assests/images/clock.png" alt="user-icon" />
+            </div>
+            <h2 id="check-in">Check In</h2>
+            <div id="check-in-description" class="box-description">
+              Shitf Started? Check in ASAP if not.
+            </div>
+            <div id="timer">
+              <button id="check-in-btn" class="box-btn">Check In</button>
+              <div class="hidden checked-in-out" id="checked-in">
+                Checked In
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a>
+            <div class="img-container">
+              <img src="../assests/images/out-of-time.png" alt="user-icon" />
+            </div>
+            <h2 id="check-out">Check Out</h2>
+            <div id="check-out-description" class="box-description">
+              Shitf Complete? Clock out and Done for the day.
+            </div>
+            <div id="timer">
+              <button id="check-out-btn" class="box-btn red">Check Out</button>
+              <div class="hidden checked-in-out"  id="checked-out">
+                Checked Out
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="attendance-table">
+        <h2>Attendence History</h2>
+        <div class="table-headings">
+          <div class="table-heading">S.N.</div>
+          <div class="table-heading">Date</div>
+          <div class="table-heading">Checked In Time</div>
+          <div class="table-heading">Checked Out Time</div>
+          <div class="table-heading">Work Hours</div>
+        </div>
+        <div class="table-datas">
+          <div class="table-data sn">1</div>
+          <div class="table-data">2076-01-11</div>
+          <div class="table-data">9:48 A.M</div>
+          <div class="table-data">6:59 P.M</div>
+          <div class="table-data">8 hr 11 min</div>
+        </div>
+        <div class="table-datas">
+          <div class="table-data sn">2</div>
+          <div class="table-data">2076-01-11</div>
+          <div class="table-data">9:48 A.M</div>
+          <div class="table-data">6:59 P.M</div>
+          <div class="table-data">8 hr 11 min</div>
+        </div>
+        <div class="table-datas">
+          <div class="table-data sn">3</div>
+          <div class="table-data">2076-01-11</div>
+          <div class="table-data">9:48 A.M</div>
+          <div class="table-data">6:59 P.M</div>
+          <div class="table-data">8 hr 11 min</div>
+        </div>
+        <div class="table-datas">
+          <div class="table-data sn">4</div>
+          <div class="table-data">2076-01-11</div>
+          <div class="table-data">9:48 A.M</div>
+          <div class="table-data">6:59 P.M</div>
+          <div class="table-data">8 hr 11 min</div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const checkInText = document.getElementById("check-in");
+    const checkInDescription = document.getElementById("check-in-description");
+    const checkInBtn = document.getElementById("check-in-btn");
+    const checkedIn = document.getElementById("checked-in");
+
+    checkInBtn.addEventListener("click", (e) => {
+      checkInBtn.classList.add("hidden");
+      checkedIn.classList.remove("hidden");
+      const time = new Date().toLocaleTimeString();
+      // console.log(time);
+      checkInText.innerText = time;
+      checkInDescription.innerText = `Checked in at ${time}`;
+    });
+
+    const checkoutText = document.getElementById("check-out");
+    const checkoutDescription = document.getElementById("check-out-description");
+    const checkoutBtn = document.getElementById("check-out-btn");
+    const checkedout = document.getElementById("checked-out");
+
+    checkoutBtn.addEventListener("click", (e) => {
+
+      checkoutBtn.classList.add("hidden");
+      checkedout.classList.remove("hidden");
+      const time = new Date().toLocaleTimeString();
+      // console.log(time);
+      checkoutText.innerText = time;
+      checkoutDescription.innerText = `Checked out at ${time}`;
+    });
+  </script>
+</html>

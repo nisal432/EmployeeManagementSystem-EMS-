@@ -5,6 +5,11 @@
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
+.hidden{
+  /* visibility: hidden; */
+  display: none !important;
+  
+}
 nav {
   box-shadow: 1px 0 2px rgb(239, 231, 231);
   background-color: oklch(99.107% 0.00011 271.152 / 0.529);
@@ -115,4 +120,113 @@ nav {
 .notification-container:hover{
   background-color: rgb(234, 229, 229);
 
+}
+.detail-value{
+	  color: rgb(97, 95, 95);
+border: 2px solid rgb(231, 225, 225);
+/* box-shadow: 1px 1px 5px rgb(172, 166, 166); */
+height: 50px;
+/* justify-content: center; */
+align-items: center;
+display: flex;
+padding-left: 20px;
+border-radius: 8px;
+	  
+}
+.detail{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.page-details {
+  background-color: rgb(254, 247, 247);
+  box-shadow: 1px 1px 5px rgb(195, 193, 193);
+  transition: 0.2s ease all;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.page-details:hover{
+	transform: translateY(-4px);
+	/* border: 1px solid blue; */
+	box-shadow: 1px 1px 5px rgb(130, 130, 229);
+}
+.quick-menu {
+  /* width: minmax(200px,300px); */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.table-headings{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(0px,1fr));
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+  font-weight: 500;
+  background-color: rgb(254, 247, 247);
+  height: 35px;
+  padding: 0 15px;
+  font-size: 15px;
+    /* box-shadow: 0px 1px 3px rgb(195, 193, 193); */
+border-radius: 3px;
+min-width: 760px;
+
+}
+
+.table-datas{
+ display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(0px,1fr));
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin-top: 2rem; */
+  font-weight: 500;
+  /* background-color: rgb(254, 247, 247); */
+  height: 45px;
+  padding: 0 15px;
+  font-size: 15px;
+    /* box-shadow: 0px 1px 3px rgb(195, 193, 193); */
+/* border-radius: 2px; */
+min-width: 760px;
+color: rgb(101, 100, 100);
+font-weight: 400;
+/* justify-items: center; */
+font-size: 14px;
+/* box-shadow: 0px 0.8px 1px rgb(215, 213, 213); */
+border-bottom: 1.7px solid rgb(234, 229, 229);
+
+/* border: 1px solid black; */
+}
+.table-data{
+  padding-left: 5px;
+}
+
+.attendance-table{
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+.option{
+  position: relative;
+
+}
+.option::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  background-color: rgb(62, 62, 195);
+  bottom: 0;
+  left: 0;
+  transition: 0.2s ease-in all;
+}
+.option:hover::before{
+  width: 100%;
 }

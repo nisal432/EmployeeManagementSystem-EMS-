@@ -1,0 +1,16 @@
+.checked-in-out{
+	color: white;
+	font-weight: 500;
+	height: 30px;
+	width: 100px;
+	border: none;
+	border-radius: 5px;
+	/* margin-top: 10px; */
+	background-color: rgb(49, 193, 51);
+	transition: 0.2s ease all;
+	text-decoration: line-through;
+	display: flex;
+	font-size: 14px;
+	justify-content: center;
+	align-items: center;
+}
