@@ -14,3 +14,5 @@ Admin's features
 	approve or reject leaves
 	assign tasks to employees
 	edit and view employees
+
+check text
